@@ -4,13 +4,13 @@
 
 ---
 
-### 🧑‍💻 Dev's
+### 🧑‍💻 Devs
 JG-endOS, RJulyane, glutmother and laisecamarao
 
 ---
 
-### 📖 Problem
-...
+### 📖 Problema
+Desenvolver um sistema de cadastro e organização de dados para um cinema local
 
 ---
 

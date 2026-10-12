@@ -1,6 +1,6 @@
-# Ticket Sale Project
+# Projeto Cine System 
 
-![poke_img](https://github.com/JG-endOS/dungeon_crawler/blob/main/ascii_game.png)
+![cine_img](https://github.com/JG-endOS/dungeon_crawler/blob/main/ascii_game.png)
 
 ---
 
@@ -10,45 +10,56 @@ JG-endOS, RJulyane, glutmother and laisecamarao
 ---
 
 ### 📖 Problema
-Desenvolver um sistema de cadastro e organização de dados para um cinema local
+Um cinema local precisa de um sistema para rastrear e resgistrar suas vendas, clientes e filmes de meneira eficiente
 
 ---
 
-### 🦾 Features
+### 🦾 Funcionalidades
 ...
 
 ---
 
-### 🗄️ Main classes
+### 🗄️ Classes principais
+• Cinema.java<br>
+• Venda.java<br> 
+• Filme.java<br>
+• Sala.java<br>
+• Cliente.java<br>
+• Produto.java<br>
+
+---
+
+### 📊 Regras de negócio
+• O cinema não resgistra vendas de ingressos para pessoas sem a idade apropriada<br>
+• O cinema oferece desconto para estudantes e idosos<br>
+• Vendas são barradas quando não haver mais cadeiras na sala<br>
+• <br>
+• <br>
+
+---
+
+### 💻 Tecnologias usadas
+• Gerenciamento de dependências: maven<br>
+• Tecnologia externa 1: Jackson (importação e exportação de dados em JSON)<br>
+• Tecnologia externa 2: JUnit (testes automatizados das regras criadas)<br>
+
+---
+
+### ⚙️ Instruções para configuração
 ...
 
 ---
 
-### 📊 Business rule's
+
+### ▶️ Intruções para execução
 ...
 
 ---
 
-### 💻 Technologies used
+### 📇 Exemplos de uso
 ...
 
 ---
 
-### ⚙️ Configuration instructions
-...
-
----
-
-
-### ▶️ Execution instructions
-...
-
----
-
-### 📇 Examples of use
-...
-
----
-
-### 🤖 AI Disclaimer
+### 🤖 Utilização de IA
 ...

@@ -1,6 +1,6 @@
 # Projeto Cine System 
 
-![cine_img]([https://github.com/JG-endOS/dungeon_crawler/blob/main/ascii_game.png](https://github.com/JG-endOS/ProjetoSistemaCinema/blob/main/Captura_de_tela_20261015_042543.png))
+![cine_img](https://github.com/JG-endOS/ProjetoSistemaCinema/blob/main/Captura_de_tela_20261015_042543.png)
 
 ---
 

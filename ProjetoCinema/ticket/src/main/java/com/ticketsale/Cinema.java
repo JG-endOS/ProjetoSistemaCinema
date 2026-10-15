@@ -217,11 +217,23 @@ public class Cinema {
         vendas.sort(Comparator.comparing(Venda::calcularValorTotal).reversed());
         System.out.println("=".repeat(20));
         System.out.println("[MELHOR VENDA]");
-        vendas.get(0).infoVenda();
+        System.out.println(vendas.get(0).getIdVenda());
         System.out.println("=".repeat(20));
         System.out.println("[PIOR VENDA]");
-        vendas.get(vendas.size()-1).infoVenda();
+        System.out.println(vendas.get(vendas.size()-1).getIdVenda());
 
+    }
+
+    public void listaRakeadaVendas(){
+        int index = 1;
+        vendas.sort(Comparator.comparing(Venda::calcularValorTotal).reversed());
+        System.out.println("=".repeat(20));
+        System.out.println("[RANKING VENDAS (valor)]");
+        for (Venda venda : vendas) {
+            System.out.println(index+"=>"+venda.getIdVenda());
+            index++;
+        }
+        System.out.println("=".repeat(20));
     }
 
     public int consultarVenda(int idVenda){

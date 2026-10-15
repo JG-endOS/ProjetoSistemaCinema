@@ -68,8 +68,8 @@ public class App {
             System.out.println("5 - Vendas");
             System.out.println("6 - Relatório/Indicadores");
             System.out.println("7 - Buscar cliente");
-            System.out.println("8 - ");
-            System.out.println("9 - ");
+            System.out.println("8 - Importar JSON");
+            System.out.println("9 - Exportar JSON");
             System.out.println("0 - Encerrar Programa");
             int entrada = Integer.parseInt(sc.nextLine());
 
@@ -451,15 +451,16 @@ public class App {
                     break;
 
                 case 6:
-                    System.out.println("=".repeat(25));
+                    System.out.println("=".repeat(20));
                     System.out.println("[Relatório | Indicadores]");
-                    System.out.println("=".repeat(25));
+                    System.out.println("=".repeat(20));
                     System.out.println(dataFormatada);
                     System.out.println("Faturamento Total    | "+ci1.calcularFaturamentoTotal()+"R$");
                     System.out.println("Valor médio vendas   | "+ci1.mediaValorVendas()+"R$");
                     System.out.println("Valor médio produtos | "+ci1.mediaValorProdutos()+"R$");
                     System.out.println("Comissão funcionário | "+ci1.calcularFaturamentoTotal()*0.10+"R$");
                     ci1.rankingVendas();
+                    ci1.listaRakeadaVendas();
                     break;
 
                 case 7:

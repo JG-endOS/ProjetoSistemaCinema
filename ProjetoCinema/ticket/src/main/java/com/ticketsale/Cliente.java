@@ -15,39 +15,30 @@ public class Cliente {
 
     public void infoCliente(){
         System.out.println("["+nome+"]");
-        System.out.println("CPF   | "+cpf);
-        System.out.println("Idade | "+idade);
+        System.out.println("CPF     | "+cpf);
+        System.out.println("Idade   | "+idade);
+        if(estudante){
+            System.out.println("50%OFFE | "+estudante);
+        } else if(idade >= 60){
+            System.out.println("50%OFFI | "+true);
+        } else {
+            System.out.println("50%OFFN | "+false);
+        }
+        
     }
 
-    public String getCpf() {
-        return cpf;
-    }
+    //=======GETTERS&SETTERS========
+    public String getCpf() {return cpf;}
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
+    public void setCpf(String cpf) {this.cpf = cpf;}
 
-    public String getNome() {
-        return nome;
-    }
+    public String getNome() {return nome;}
+    
+    public void setNome(String nome) {this.nome = nome;}
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+    public int getIdade() {return idade;}
 
-    public int getIdade() {
-        return idade;
-    }
+    public void setIdade(int idade) {this.idade = idade;}
 
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-
-    public boolean isEstudante() {
-        return estudante;
-    }
-
-    public void setEstudante(boolean estudante) {
-        this.estudante = estudante;
-    }
+    public boolean isEstudante() {return estudante;}
 }

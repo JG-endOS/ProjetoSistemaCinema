@@ -17,27 +17,12 @@ public class Produto {
         System.out.println("Categoria | "+categoria);
     }
 
-    public String getNome() {
-        return nome;
-    }
+    //==========GETTERS&SETTERS=============
+    public void setNome(String nome) {this.nome = nome;}
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+    public double getPreco() {return preco;}
 
-    public double getPreco() {
-        return preco;
-    }
+    public void setPreco(double preco) {this.preco = preco;}
 
-    public void setPreco(double preco) {
-        this.preco = preco;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
+    public void setCategoria(String categoria) {this.categoria = categoria;}
 }

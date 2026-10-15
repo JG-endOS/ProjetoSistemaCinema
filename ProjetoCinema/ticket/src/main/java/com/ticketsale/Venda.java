@@ -14,6 +14,8 @@ public class Venda {
     private DateTimeFormatter br = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
     private String dataFormatada = dataHora.format(br);
 
+    
+
     public Venda(Cliente cliente, Filme filme, Sala sala) {
         this.cliente = cliente;
         this.filme = filme;
@@ -30,6 +32,11 @@ public class Venda {
 
     public double calcularValorTotal() {
         double total = valorIngressoBase;
+        DayOfWeek diaSemana = dataHora.getDayOfWeek();
+        if (diaSemana == DayOfWeek.SATURDAY || diaSemana == DayOfWeek.SUNDAY) {
+            total += 10;
+        }
+
         if(this.sala.isVip()){
             total += 10;
         } 
@@ -59,59 +66,14 @@ public class Venda {
         }
     }
 
-    public int getIdVenda() {
-        return idVenda;
-    }
+    //========GETTERS&SETTERS=============
+    public int getIdVenda() {return idVenda;}
 
-    public void setIdVenda(int idVenda) {
-        this.idVenda = idVenda;
-    }
+    public void setIdVenda(int idVenda) {this.idVenda = idVenda;}
 
-    public Cliente getCliente() {
-        return cliente;
-    }
+    public Cliente getCliente() {return cliente;}
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
+    public Filme getFilme() {return filme;}
 
-    public Filme getFilme() {
-        return filme;
-    }
-
-    public void setFilme(Filme filme) {
-        this.filme = filme;
-    }
-
-    public Sala getSala() {
-        return sala;
-    }
-
-    public void setSala(Sala sala) {
-        this.sala = sala;
-    }
-
-    public ArrayList<Produto> getProdutos() {
-        return produtos;
-    }
-
-    public void setProdutos(ArrayList<Produto> produtos) {
-        this.produtos = produtos;
-    }
-
-    public double getValorIngressoBase() {
-        return valorIngressoBase;
-    }
-
-    public void setValorIngressoBase(double valorIngressoBase) {
-        this.valorIngressoBase = valorIngressoBase;
-    }
-
-    public LocalDateTime getDataHora() {
-        return dataHora;
-    }
-
-    public void setDataHora(LocalDateTime dataHora) {
-        this.dataHora = dataHora;
-    }
+    public Sala getSala() {return sala;}  
 }

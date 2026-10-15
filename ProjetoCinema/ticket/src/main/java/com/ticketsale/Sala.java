@@ -6,8 +6,7 @@ public class Sala {
     private boolean vip;
     private String tipoTela; 
 
-    public Sala(int numeroSala, int capacidadeTotal, String tipoTela, boolean vip) {
-        this.numeroSala = numeroSala;
+    public Sala(int capacidadeTotal, String tipoTela, boolean vip) {
         this.capacidadeTotal = capacidadeTotal;
         this.tipoTela = tipoTela;
         this.vip = vip;
@@ -20,35 +19,16 @@ public class Sala {
         System.out.println("Vip        | "+vip);
     }
 
-    public int getNumeroSala() {
-        return numeroSala;
-    }
+    //==========GETTERS&SETTERS=============
+    public void setNumeroSala(int numeroSala) {this.numeroSala = numeroSala;}
 
-    public void setNumeroSala(int numeroSala) {
-        this.numeroSala = numeroSala;
-    }
+    public int getCapacidadeTotal() {return capacidadeTotal;}
 
-    public int getCapacidadeTotal() {
-        return capacidadeTotal;
-    }
+    public void setCapacidadeTotal(int capacidadeTotal) {this.capacidadeTotal = capacidadeTotal;}
 
-    public void setCapacidadeTotal(int capacidadeTotal) {
-        this.capacidadeTotal = capacidadeTotal;
-    }
+    public void setTipoTela(String tipoTela) {this.tipoTela = tipoTela;}
 
-    public String getTipoTela() {
-        return tipoTela;
-    }
+    public boolean isVip() {return vip;}
 
-    public void setTipoTela(String tipoTela) {
-        this.tipoTela = tipoTela;
-    }
-
-    public boolean isVip() {
-        return vip;
-    }
-
-    public void setVip(boolean vip) {
-        this.vip = vip;
-    }
+    public void setVip(boolean vip) {this.vip = vip;}
 }

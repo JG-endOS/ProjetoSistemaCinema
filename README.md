@@ -15,7 +15,14 @@ Um cinema local precisa de um sistema para rastrear e resgistrar suas vendas, cl
 ---
 
 ### 🦾 Funcionalidades
-...
+• Cadastrar
+• Listar / Ordenar
+• Consultar
+• Remover
+• Editar 
+• Calcular indicadores / Gerar relatórios
+• Pesquisar
+• Associar Objetos
 
 ---
 

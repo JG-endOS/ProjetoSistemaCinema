@@ -32,9 +32,9 @@ Um cinema local precisa de um sistema para rastrear e resgistrar suas vendas, cl
 ### 📊 Regras de negócio
 • O cinema não resgistra vendas de ingressos para pessoas sem a idade apropriada<br>
 • O cinema oferece desconto para estudantes e idosos<br>
-• Vendas são barradas quando não houver mais cadeiras na sala<br>
-• <br>
-• <br>
+• 10% do faturamento total é dos funcionários<br>
+• Vendas são negadas quando a sala está lotada<br>
+• Aos finais de semana o preço base fica 10R$ mais caro<br>
 
 ---
 

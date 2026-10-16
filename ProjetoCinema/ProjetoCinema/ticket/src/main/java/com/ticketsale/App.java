@@ -56,20 +56,23 @@ public class App {
         
         int rodando = 1;
         while(rodando!=0){
-            System.out.println("=".repeat(12));
-            System.out.println("  "+ci1.getNomeCinema());
-            System.out.println("=".repeat(12));
 
-            System.out.println("1 - Clientes");
-            System.out.println("2 - Filmes");
-            System.out.println("3 - Salas");
-            System.out.println("4 - Produtos");
-            System.out.println("5 - Vendas");
-            System.out.println("6 - Relatório/Indicadores");
-            System.out.println("7 - Buscar cliente");
-            System.out.println("8 - Exportar vendas para JSON");
-            System.out.println("0 - Encerrar Programa");
-            int entrada = Integer.parseInt(sc.nextLine());
+            int entrada;
+            do {
+                System.out.println("=".repeat(12));
+                System.out.println("  "+ci1.getNomeCinema());
+                System.out.println("=".repeat(12));
+                System.out.println("1 - Clientes");
+                System.out.println("2 - Filmes");
+                System.out.println("3 - Salas");
+                System.out.println("4 - Produtos");
+                System.out.println("5 - Vendas");
+                System.out.println("6 - Relatório/Indicadores");
+                System.out.println("7 - Buscar cliente");
+                System.out.println("8 - Exportar vendas para JSON");
+                System.out.println("0 - Encerrar Programa");
+                entrada = Integer.parseInt(sc.nextLine());
+            } while(entrada < 0 || entrada > 8);
 
             switch (entrada) { 
                 

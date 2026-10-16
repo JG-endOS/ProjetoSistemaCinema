@@ -17,12 +17,10 @@ public class Cliente {
         System.out.println("["+nome+"]");
         System.out.println("CPF     | "+cpf);
         System.out.println("Idade   | "+idade);
-        if(estudante){
-            System.out.println("50%OFFE | "+estudante);
-        } else if(idade >= 60){
-            System.out.println("50%OFFI | "+true);
-        } else {
-            System.out.println("50%OFFN | "+false);
+        if(estudante || idade >= 60){
+            System.out.println("50%OFF  | "+estudante);
+        }  else {
+            System.out.println("50%OFF  | "+false);
         }
         
     }

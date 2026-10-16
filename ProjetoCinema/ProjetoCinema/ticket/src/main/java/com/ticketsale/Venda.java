@@ -50,13 +50,10 @@ public class Venda {
             total += 10;
         } 
 
-        if(cliente.getIdade() >= 60){
+        if(cliente.getIdade() >= 60 || cliente.isEstudante()){
             total = total*0.50;
         }
 
-        if(cliente.isEstudante()){
-            total = total*0.50;
-        }
         for (Produto p : produtos) {
             total += p.getPreco();
         }

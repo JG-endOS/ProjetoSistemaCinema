@@ -72,7 +72,7 @@ public class Cinema {
     }
 
     public void listarFilmes(){
-        int index = 0;
+        int index = 1;
         System.out.println("=".repeat(20));
         System.out.println("[ Filmes "+nomeCinema+" ]");
         System.out.println("=".repeat(20));
@@ -124,7 +124,7 @@ public class Cinema {
     }
 
     public void listarProdutos(){
-        int index = 0;
+        int index = 1;
         System.out.println("=".repeat(20));
         System.out.println("[ Produtos "+nomeCinema+" ]");
         System.out.println("=".repeat(20));
@@ -201,7 +201,7 @@ public class Cinema {
     }
 
     public void listarVendas(){
-        int index = 0;
+        int index = 1;
         System.out.println("=".repeat(20));
         System.out.println("[ Vendas "+nomeCinema+" ]");
         System.out.println("=".repeat(20));
@@ -228,7 +228,7 @@ public class Cinema {
         int index = 1;
         vendas.sort(Comparator.comparing(Venda::calcularValorTotal).reversed());
         System.out.println("=".repeat(20));
-        System.out.println("[RANKING VENDAS (valor)]");
+        System.out.println("[RANKING VENDAS (id)]");
         for (Venda venda : vendas) {
             System.out.println(index+"=>"+venda.getIdVenda());
             index++;
@@ -263,7 +263,7 @@ public class Cinema {
         System.out.println("=".repeat(20));
         System.out.println("[ Clientes "+nomeCinema+" ]");
         System.out.println("=".repeat(20));
-        int index = 0;
+        int index = 1;
         for (Cliente cliente : clientes) {
             System.out.println(index+".");
             cliente.infoCliente();

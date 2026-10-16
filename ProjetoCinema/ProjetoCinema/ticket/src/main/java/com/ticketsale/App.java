@@ -88,7 +88,7 @@ public class App {
                         int index;
                         do {
                             System.out.println("Digite o index do cliente que deseja editar: ");
-                            index = Integer.parseInt(sc.nextLine());
+                            index = Integer.parseInt(sc.nextLine())-1;
 
                         } while (index < 0 || index >ci1.getClientes().size()-1);
                         
@@ -116,7 +116,7 @@ public class App {
                         int index;
                         do {
                             System.out.println("Digite o Index do cliente que deseja excluir: ");
-                            index = Integer.parseInt(sc.nextLine());
+                            index = Integer.parseInt(sc.nextLine())-1;
                         } while (index < 0 || index > ci1.getClientes().size()-1);
  
                         ci1.removerCliente(ci1.getClientes().get(index));
@@ -168,7 +168,7 @@ public class App {
                         int index;
                         do {
                             System.out.println("Digite o index do filme que deseja editar: ");
-                            index = Integer.parseInt(sc.nextLine());
+                            index = Integer.parseInt(sc.nextLine())-1;
 
                         } while (index < 0 || index > ci1.getFilmes().size()-1);
                         
@@ -200,7 +200,7 @@ public class App {
                         int index;
                         do {
                             System.out.println("Digite o Index do filme que deseja excluir: ");
-                            index = Integer.parseInt(sc.nextLine());
+                            index = Integer.parseInt(sc.nextLine())-1;
                         } while (index < 0 || index > ci1.getFilmes().size()-1);
                         
                         ci1.removerFilme(ci1.getFilmes().get(index));
@@ -280,7 +280,7 @@ public class App {
                         do {
                             System.out.println("Digite o número da sala que deseja excluir: ");
                             index = Integer.parseInt(sc.nextLine())-1;
-                        } while (index < 0 || index > ci1.getSalas().size());
+                        } while (index < 0 || index > ci1.getSalas().size()-1);
 
                         ci1.removerSala(ci1.getSalas().get(index));
 
@@ -321,7 +321,7 @@ public class App {
                         int index;
                         do {
                             System.out.println("Digite o index do produto que deseja editar: ");
-                            index = Integer.parseInt(sc.nextLine());
+                            index = Integer.parseInt(sc.nextLine())-1;
                         } while (index < 0 || index > ci1.getSalas().size()-1);
                         
                         String novoNomeProduto;
@@ -347,7 +347,7 @@ public class App {
                         int index;
                         do {
                             System.out.println("Digite o index do produto que deseja excluir: ");
-                            index = Integer.parseInt(sc.nextLine());
+                            index = Integer.parseInt(sc.nextLine())-1;
                         } while (index < 0 || index > ci1.getProdutos().size()-1);
 
                         ci1.removerProduto(ci1.getProdutos().get(index));
@@ -397,7 +397,7 @@ public class App {
                         int indexCliente;
                         do {
                             System.out.println("Digite o index do cliente: ");
-                            indexCliente = Integer.parseInt(sc.nextLine());
+                            indexCliente = Integer.parseInt(sc.nextLine())-1;
                         } while (indexCliente < 0 || indexCliente > ci1.getClientes().size()-1);
                         cliente = ci1.getClientes().get(indexCliente);
 
@@ -406,7 +406,7 @@ public class App {
                         int indexFilme;
                         do {
                             System.out.println("Digite o index do filme: ");
-                            indexFilme = Integer.parseInt(sc.nextLine());
+                            indexFilme = Integer.parseInt(sc.nextLine())-1;
                         } while (indexFilme < 0 || indexFilme > ci1.getClientes().size()-1);
                         filme = ci1.getFilmes().get(indexFilme);
 
@@ -416,7 +416,7 @@ public class App {
                         do {
                             System.out.println("Digite o número da sala: ");
                             indexSala = Integer.parseInt(sc.nextLine())-1;
-                        } while (indexSala < 0 || indexSala > ci1.getClientes().size());
+                        } while (indexSala < 0 || indexSala > ci1.getClientes().size()-1);
                         sala = ci1.getSalas().get(indexSala);
 
                         Venda v = new Venda(cliente, filme, sala);
@@ -432,7 +432,7 @@ public class App {
                             int produtoEscolhido;
                             do {
                                 System.out.println("Digite o index do produto: ");
-                                produtoEscolhido = Integer.parseInt(sc.nextLine());
+                                produtoEscolhido = Integer.parseInt(sc.nextLine())-1;
                             } while (produtoEscolhido < 0 || produtoEscolhido > ci1.getProdutos().size()-1);
                             v.adicionarProduto(ci1.getProdutos().get(produtoEscolhido));
                         } else {

@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class IdadeIngressoTest {
 
     @Test
-    void naoDeveriaRegistrarVendaParaMenorDeIdade() {
+    public void naoDeveriaRegistrarVendaParaMenorDeIdade() {
         Cinema cinema = new Cinema("CineTest");
         Filme filme16 = new Filme("Ação Extrema", "Ação", 16, 120);
         Cliente menorDeIdade = new Cliente("111.111.111-11", "Lucas", 14, false);

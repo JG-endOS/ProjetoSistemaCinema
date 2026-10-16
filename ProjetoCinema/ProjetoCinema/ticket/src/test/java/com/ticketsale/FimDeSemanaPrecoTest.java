@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class FimDeSemanaPrecoTest {
 
     @Test
-    void deveriaCalcularPrecoNormalDuranteDiaDeSemana() {
+    public void deveriaCalcularPrecoNormalDuranteDiaDeSemana() {
         Cliente cliente = new Cliente("444.444.444-44", "Mariana", 25, false);
         Filme filme = new Filme("Aventura", "Aventura", 10, 110);
         Sala sala = new Sala(50, "Normal", false); // Sala comum (não VIP)
@@ -24,7 +24,7 @@ public class FimDeSemanaPrecoTest {
     }
 
     @Test
-    void deveriaAcrescentarDezReaisNoFinalDeSemana() {
+    public void deveriaAcrescentarDezReaisNoFinalDeSemana() {
         Cliente cliente = new Cliente("444.444.444-44", "Mariana", 25, false);
         Filme filme = new Filme("Aventura", "Aventura", 10, 110);
         Sala sala = new Sala(50, "Normal", false); // Sala comum (não VIP)

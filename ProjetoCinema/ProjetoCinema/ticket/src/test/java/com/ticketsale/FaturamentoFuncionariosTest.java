@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class FaturamentoFuncionariosTest {
 
     @Test
-    void deveriaCalcularDezPorCentoDoFaturamentoTotalParaFuncionarios() {
+    public void deveriaCalcularDezPorCentoDoFaturamentoTotalParaFuncionarios() {
         Cinema cinema = new Cinema("CineTest");
         Cliente cliente = new Cliente("444.444.444-44", "Mariana", 25, false);
         Filme filme = new Filme("Aventura", "Aventura", 10, 110);

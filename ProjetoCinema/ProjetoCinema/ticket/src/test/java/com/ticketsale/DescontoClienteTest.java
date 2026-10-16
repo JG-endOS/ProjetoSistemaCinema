@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class DescontoClienteTest {
 
     @Test
-    void deveriaAplicarDescontoParaEstudante() {
+    public void deveriaAplicarDescontoParaEstudante() {
         Cliente estudante = new Cliente("222.222.222-22", "Beatriz", 20, true);
         Filme filme = new Filme("Comédia", "Comédia", 10, 90);
         Sala sala = new Sala(50, "Normal", false);
@@ -20,7 +20,7 @@ public class DescontoClienteTest {
     }
 
     @Test
-    void deveriaAplicarDescontoParaIdoso() {
+    public void deveriaAplicarDescontoParaIdoso() {
         Cliente idoso = new Cliente("333.333.333-33", "Carlos", 65, false);
         Filme filme = new Filme("Drama", "Drama", 10, 100);
         Sala sala = new Sala(50, "Normal", false);

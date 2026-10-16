@@ -1,6 +1,6 @@
 # Projeto Cine System 
 
-![cine_img](https://github.com/JG-endOS/ProjetoSistemaCinema/blob/main/Captura_de_tela_20261015_042543.png)
+![cine_img](https://github.com/JG-endOS/ProjetoSistemaCinema/blob/main/Captura%20de%20tela%202026-10-15%20220316.png)
 
 ---
 

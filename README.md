@@ -5,10 +5,29 @@
 ---
 
 ### 🧑‍💻 Devs
-JG-endOS - responsável pela maior parte da escrita do código, principalmente funções e classes<br>
-RJulyane - responsável pela implementação do menu e do Gson<br>
-glutmother - responsável pela escrita das funções e da organização do GitHub<br>
-laisecamarao - responsável pela implementação dos testes automatizados pelo JUnit<br>
+
+<table>
+  <tr>
+    <td>Nome do desenvolvedor</td>
+    <td>Função</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/JG-endOS">JG-endOS</a></td>
+    <td>responsável pela maior parte da escrita do código, principalmente funções e classes</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/RJulyane">RJulyane</a></td>
+    <td>responsável pela implementação do menu e do Gson</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/glutmother">glutmother</a></td>
+    <td>responsável pela escrita das funções e da organização do GitHub</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/laisecamarao">laisecamarao</a></td>
+    <td>responsável pela implementação dos testes automatizados pelo JUnit</td>
+  </tr>
+</table>
 
 ---
 

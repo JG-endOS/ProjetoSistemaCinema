@@ -56,7 +56,6 @@ public class App {
         
         int rodando = 1;
         while(rodando!=0){
-            System.out.flush();
             System.out.println("=".repeat(12));
             System.out.println("  "+ci1.getNomeCinema());
             System.out.println("=".repeat(12));

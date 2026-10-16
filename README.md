@@ -37,14 +37,32 @@ Um cinema local precisa de um sistema para rastrear e registrar suas vendas, seu
 ---
 
 ### 🦾 Funcionalidades
-• Cadastrar<br>
-• Listar / Ordenar<br>
-• Consultar<br>
-• Remover<br>
-• Editar<br>
-• Calcular indicadores / Gerar relatórios<br>
-• Pesquisar<br>
-• Associar Objetos<br>
+<table>
+  <tr>
+    <td>Cadastrar</td>
+  </tr>
+  <tr>
+    <td>Listar/Ordenar</td>
+  </tr>
+  <tr>
+    <td>Consultar</td>
+  </tr>
+  <tr>
+    <td>Remover</td>
+  </tr>
+  <tr>
+    <td>Editar</td>
+  </tr>
+  <tr>
+    <td>Calcular indicadores/Gerar relatórios</td>
+  </tr>
+  <tr>
+    <td>Pesquisar</td>
+  </tr>
+  <tr>
+    <td>Associar Objetos</td>
+  </tr>
+</table>
 
 ---
 

@@ -8,7 +8,7 @@ public class IdadeIngressoTest {
     @Test
     public void naoDeveriaRegistrarVendaParaMenorDeIdade() {
         Cinema cinema = new Cinema("CineTest");
-        Filme filme16 = new Filme("Ação Extrema", "Ação", 16, 120);
+        Filme filme16 = new Filme("Filme Extremo", "Ação", 16, 120);
         Cliente menorDeIdade = new Cliente("111.111.111-11", "Lucas", 14, false);
         Sala sala = new Sala(50, "IMAX", false);
         

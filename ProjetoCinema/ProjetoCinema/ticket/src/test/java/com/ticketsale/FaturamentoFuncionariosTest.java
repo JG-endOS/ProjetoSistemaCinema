@@ -9,8 +9,8 @@ public class FaturamentoFuncionariosTest {
     public void deveriaCalcularDezPorCentoDoFaturamentoTotalParaFuncionarios() {
         Cinema cinema = new Cinema("CineTest");
         Cliente cliente = new Cliente("444.444.444-44", "Mariana", 25, false);
-        Filme filme = new Filme("Aventura", "Aventura", 10, 110);
-        Sala sala = new Sala(50, "Normal", false);
+        Filme filme = new Filme("Filme Legal", "Aventura", 10, 110);
+        Sala sala = new Sala(50, "IMAX", false);
         
         Venda venda = new Venda(cliente, filme, sala); 
         cinema.registrarVenda(venda);

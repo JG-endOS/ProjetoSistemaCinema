@@ -26,7 +26,6 @@ public class ArmazenamentoJson {/*responsavel por exportar as vendas */
             gson.toJson(dados, writer);//transforma em dados
             System.out.println("Dados exportados, para: "+nomeArquivo);
         }catch(IOException e){
-            //caso tudo de errado
             System.out.println("Erro ao exportar o arquivo JSON: " + e.getMessage());
         }
     }

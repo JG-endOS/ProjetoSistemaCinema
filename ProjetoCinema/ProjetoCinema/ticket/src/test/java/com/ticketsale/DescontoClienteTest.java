@@ -8,8 +8,8 @@ public class DescontoClienteTest {
     @Test
     public void deveriaAplicarDescontoParaEstudante() {
         Cliente estudante = new Cliente("222.222.222-22", "Beatriz", 20, true);
-        Filme filme = new Filme("Comédia", "Comédia", 10, 90);
-        Sala sala = new Sala(50, "Normal", false);
+        Filme filme = new Filme("Scary Movie", "Comédia", 10, 90);
+        Sala sala = new Sala(50, "2D", false);
         
         Venda venda = new Venda(estudante, filme, sala);
         double valorTotal = venda.calcularValorTotal();
@@ -22,8 +22,8 @@ public class DescontoClienteTest {
     @Test
     public void deveriaAplicarDescontoParaIdoso() {
         Cliente idoso = new Cliente("333.333.333-33", "Carlos", 65, false);
-        Filme filme = new Filme("Drama", "Drama", 10, 100);
-        Sala sala = new Sala(50, "Normal", false);
+        Filme filme = new Filme("Ilha do Medo", "Drama", 10, 100);
+        Sala sala = new Sala(50, "2D", false);
         
         Venda venda = new Venda(idoso, filme, sala);
         double valorTotal = venda.calcularValorTotal();

@@ -9,8 +9,8 @@ public class SalaLotadaTest {
     public void naoDeveriaPermitirVendaQuandoSalaEstiverLotada() {
         Cinema cinema = new Cinema("CineTest");
         Cliente cliente = new Cliente("444.444.444-44", "Mariana", 25, false);
-        Filme filme = new Filme("Aventura", "Aventura", 10, 110);
-        Sala salaLotada = new Sala(0, "Normal", false); 
+        Filme filme = new Filme("Bob Esponja", "Aventura", 10, 110);
+        Sala salaLotada = new Sala(0, "IMAX", false); 
         
         Venda venda = new Venda(cliente, filme, salaLotada);
         cinema.registrarVenda(venda);
